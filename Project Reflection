@@ -1,0 +1,36 @@
+#Project Reflection
+## Fitness Tracker web Debugging
+
+This repository documents the debugging process for a fitness tracker web with the aim of preventing users from adding duplicate fitness goals to the list. The debugging task involved working with the Document Object Model (DOM) in JavaScript and addressing issues related to user input validation and alerting.
+
+### Debugging Approach
+
+1. **Identifying the Issue**: The initial step was to identify the issue, which was the ability of users to add duplicate fitness goals to the list.
+
+2. **Analysis of Existing Code**: The existing code was analyzed to understand how goals were being added to the list and where the validation for duplicates needed to be implemented.
+
+3. **Preventing Duplicates**: To prevent duplicates, a check was implemented to compare the text content of each existing goal with the new goal input. This was achieved by retrieving all existing goals using ***`querySelectorAll`*** and iterating through them to perform the comparison.
+
+4. **Displaying Alerts**: When a duplicate goal was found, an alert message was displayed to inform the user. This was achieved using the ***`alert()`*** function.
+
+5. **Returning from Function**: To prevent the duplicate goal from being added, the ***`return`*** statement was used to exit the function if a duplicate was found.
+
+### Challenges Faced
+
+- **DOM Manipulation**: Working with the DOM, especially when retrieving existing elements and adding new ones dynamically, required a clear understanding of how to navigate and interact with DOM elements.
+  
+- **Debugging Logic**: Debugging logic errors, such as preventing duplicates, involved carefully analyzing the code structure and flow to identify the appropriate placement for validation checks and alert messages.
+
+- **Handling User Input**: Ensuring a smooth user experience while preventing duplicates required thoughtful consideration of how to provide feedback to users without disrupting their workflow.
+
+### Skills Developed
+
+- **DOM Manipulation**: Through this project, proficiency in working with the DOM in JavaScript was enhanced, including selecting elements, modifying their properties, and responding to user interactions.
+
+- **Debugging Techniques**: Experience gained in debugging JavaScript code, including identifying and fixing logic errors, utilizing console logging for debugging, and employing breakpoints to step through code execution.
+
+- **User Feedback Implementation**: Understanding how to provide informative alerts and feedback to users when certain actions are performed or prevented within the application.
+
+### Conclusion
+
+The debugging process for the fitness app provided valuable insights into working with the DOM and addressing user input validation issues. By effectively leveraging DOM manipulation techniques and debugging skills, the app's functionality was improved, resulting in a smoother user experience with the prevention of duplicate fitness goals.
